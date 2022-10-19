@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Formulário</title>
+        <link rel="stylesheet" type="text/css" href="formulario.css">
+        <script type="text/javascript" src="formulario.js"></script>
+    </head>
+    <body>
+        <div class="form">
+            <form action="bemvindo.php" method="post" enctype="application/x-www-form-urlencoded">
+                <table>
+                    <tr>
+                        <td>Usuário:</td>
+                        <td><input type="text" placeholder="Informe o seu usuário" id="usuario" maxlength="50" name="usuario"></td>
+                    </tr>
+                    <tr>
+                        <td>Senha:</td>                    
+                        <td><input type="password" placeholder="Informe a sua senha" id="senha" maxlength="8" name="senha"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><input type="submit" id="entrar" value="Login" name="entrar" disabled></td>                        
+                    </tr>
+                </table>                
+            </form><br><br>            
+            <button id="cancelar">Cancelar</button>
+        </div>
+        <script>
+            document.onload = main();
+        </script>
+    </body>    
+</html>
